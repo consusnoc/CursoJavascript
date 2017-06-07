@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+<script>
+	
+	var num1=prompt("Introduce un numero");
+	var num2=prompt("Introduce otro numero");
+
+if( !isNaN(num1) && !isNaN(num2)){
+
+	var operacion=prompt("Que operacion deseas realizar? suma/resta/multiplicacion/division");
+
+
+	if (operacion=="suma"){
+		operacion= parseInt(num1) + parseInt(num2);
+		alert("El resultado de la suma es: "+ operacion);
+	}
+
+	else if(operacion=="resta"){
+		alert(parseInt(num1) - parseInt(num2));
+	}
+
+	else if (operacion=="multiplicacion"){
+		alert(parseInt(num1)*parseInt(num2));
+	}
+
+	else if (operacion=="division"){
+		alert(parseInt(num1)/parseInt(num2));
+	}
+
+	else{
+		alert("No ingresaste una operacion valida");
+	}
+
+}
+
+else{
+
+	if(typeof(num1)=="string" || typeof(num2)=="string"){
+
+		alert("Has introducido valores numericos");
+
+	}
+
+	else{
+		alert("ha ocurrido un error");
+	}
+	//alert("No se pueden operar los numeros");
+}
+
+
+
+</script>
+
+</head>
+<body>
+	
+</body>
+</html>

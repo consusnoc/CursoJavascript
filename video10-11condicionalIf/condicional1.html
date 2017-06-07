@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var precioCoche=60000;
+		var dineroAhorrado=prompt("Cuanto dinero tienes ahorrado?");
+		//var edad=prompt("Introduce tu edad por favor");
+		var loteria=prompt("Te ha tocado la loteria??")
+
+		/*EJEMPLO ANTERIOR CON LA EDAD
+
+		if(dineroAhorrado>=precioCoche && edad>=18){
+			alert("Puedes comprar el coche");
+		}else{
+			alert("No puedes comprar el coche. No tienes suficientes ahorros ni la edad");
+		}*/
+
+		if(dineroAhorrado>=precioCoche || loteria=="si"){
+			alert("Puedes comprar el coche");
+		}else{
+			alert("No puedes comprar el coche");
+		}
+
+		alert("Continuamos con la ejecucion del programa");
+
+	</script>
+</body>
+</html>
